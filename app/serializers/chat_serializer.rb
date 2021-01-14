@@ -6,7 +6,7 @@ class ChatSerializer
 
   def to_serialized_json
     options = {
-      except: [:updated_at, :created_at],
+      except: [:updated_at]
     }
     @chat.to_json(options)
   end
